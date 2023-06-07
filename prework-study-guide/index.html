@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
+    <style>
+      p {
+        text-align: left;
+        font-size: 30px;
+      }
+    </style>
+
+    <style>
+      ol {
+        font-size: 23px;
+      }
+    </style>
   </head>
+
+
+
   <body>
     <header id="header">
       <h1>Prework Study Guide</h1>
@@ -18,40 +33,189 @@
 
         <h2>HTML</h2>
 
-        <p>
-        </p>
+<br>
+
+        <p>Hypertext Markup Language, also known as HTML, is a markup language used for developing web applications.
+          Analogous to a house's frame, HTML is the building block used for making an attractive, user friendly website
+          . HTML has</p>
+          <br>
+          <p>Two important elements of the HTML are the <b>Head</b> and <b>Body</b> elements.</p>
+          <br>
+
         
 
+    
+       <p> The <b>head</b> elements contains metadata that is not visibal to the users, but is 
+        used to communicate with the browser so the website is rendered correctly. You will find the following in 
+      the head:</p> 
+      <ul>
+        <li> The declaration which tells the broweser the document type.</li>
+        <li>The language for the webpage. </li>
+        <li>The wepage's tab title for search engine optimization</li>
+        <li>The CSS styles associated with a website.</li>
+        <li>Elements that define the base URL for a webpage</li>
+        <li>Links to external resources.</li>
+        <li>Element that define metadata such as the character set, description, keywords, author, and viewport.</li>
+      </ul>
+        <br>
+         
+          <p>The <b>body</b> elements contains all of the information a programmer wants the user to see 
+          and interact with. You will find the following in 
+          the body:
+          </p>
      <ul>
-       <li> Hypertext Markup Language, also known as HTML, is a markup language used for developing web applications.
-        Analogous to a house's frame, HTML is the building block used for making an attractive, user friendly website. </li> 
-        <li>
-          HTML has many different commands. The commands begin with < > and end with < />. 
-        </li>
+      <li> The level of heading, which varies from h1, h2, h3, h4, h5, and h6.</li>
+      <li>Insert blocks of text</li>
+      <li>Create unordered lists (ul), ordered lists (ol), and list items (li)</li>
+      <li>An image and it's attributes</li>
+      <li>Create lines of empty space</li>
+      <li>Links to different web pages</li>
      </ul>
 
+     <br>
+
+     <p>For the element to work the function must start with < > and end with < />. HTML  </p>
+
+
+   
       </section>
    
       <section class="card" id="css-section">
 
         <h2>CSS</h2>
 
-        <p>To continue with the building analogy, Cascading style Sheets, referred as CSS, is the curb appeal of a website. CSS is used to show how this information on a webpage is presented to users.</p>
-        <p> There are three ways to style a webpage using CSS: inline CSS, Internal CSS style sheet, external CSS style sheet.</p>
+        <br>
+
+        <p>To continue with the building analogy, Cascading style Sheets, referred as CSS, is the curb appeal of a website. CSS is used to show how the information on a webpage is presented to users.
+        There are three ways to style a webpage using CSS:</p>
+        <ul>
+          <li><b>inline CSS</b> is used when a developer wants to style an element directly in the HTML file. This type of styling is applied to a specific HTML tag, using a style attribute.
+          Although they are useful for quick and permanent changes, they are less useful than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <li><b>internal CSS style sheet</b>contains the Css rules in the head of the HTML. This type of styling allows developers
+          to create rules for one page.</li>
+          <li><b>external CSS</b> is the most common and preferred in most cases because it allows developers to keep all their CSS rules in a separate file. An external Css
+          can be linked by inserting the link command in the head of the HTML. You also need to include the rel which specifies the relationship between the current document and the linked document resource
+        , and the href which specifies the location of the CSS.</li>
+        </ul>
+        
+        <br>
+        <p>Like HTML, CSS has it's own set of rules to properly perform the desired functions.</p>
+        <ul>
+          <li>The <b>declaration block</b> is used to hold the styling changes being made to the selector the declaration box is {}.</li>
+          <li>The <b>selector</b> is the element of the HTML you are trying to style, such as paragraph, image, etc.</li>
+          <li>The <b>property</b> is what we want to apply to the selector and ends the syntax :<br>such as <b>color:</b></li>
+          <li>The <b>value</b> is to determine the change to the property and ends with syntax ; <br>
+            Such as Color: <b>blue;</b>
+          </li>
+        </ul>
    
+
+
       </section>
    
+
+
+
+
+
+
+
+
       <section class="card" id="git-section">
+
+        <h2>Git</h2>
+
+        <br>
+
+        <p>Git is the most commonly used version control software. Git is good for version control in the local environment, but using the cloud based GitHub is essential for collaboration.
+        A benefit of GitHub is creating issues as a checklist of what needs to be done in a project.Git commands can be accessed in the terminal by using the indicator <b>git</b>.
+         There are many git commands that can be used in the computer’s terminal, including: </p>
+        <br>
+
+
+        <ol>1. Clone a project in GitHub onto the local environment: git clone "paste copied SSH value" </ol>
+<ul> 
+  <li><b>clone</b> duplicates the code from a progects repository on GitHub.</li>
+  <li>The SSH value can be found by clicking code on the projects repository </li>
+</ul>
+<br>
+
+       <ol> 2. Create branch: <b>git checkout -b “  ”</b>
+      </ol>
+     <ul>
+       <li><b>git</b> must precede every Git statement</li>
+       <li><b>checkout</b> moves the working branch to a new branch </li>
+       <li> <b>-b</b> creates the new branch.</li>
+       <li>What is between <b>“ ”</b> is the name of the new branch</li>
+     </ul>
+
+     <br>
+
+     <ol> 3. Confirm that you are working in new branch: <b>git status</b> </ol>
+     <ul>
+       <li><b>status</b> shows which branch you are currently working in</li>
+     </ul>
+
+     <br>
+
+     <ol>4. Create a commit with a message: <b>git commit -m ""</b> </ol>
+     <ul>
+      <li> <b>-m</b> is used to create a message for the commit.</li>
+      <li>The message for the commit is written between <b>" "</b></li>
+     </ul>
+
+     <br>
+
+     <ol>5. Double-check if our local branch is in sync with the base branch in GitHub: <b>git pull origin main</b></ol>
+     <ul>
+      <li><b>pull</b> receives a branch's modifications into the local environment</li>
+      <li><b>origin</b> indicates the source of the pull will be in the GitHub repo</li>
+      <li><b>main</b> indicates the branch</li>
+      <li><b>Make sure to pull to make sure you are working on projects current version </b></li>
+     </ul>
+     <br>
+
+
+     <ol>6. Push changes to GitHub/remote base branch: <b>git push origin “ ”</b></ol>
+     <ul>
+      <li><b>push</b> creates a new remote branch or add new changes to an existing branch.</li>
+      <li>What is between “ ” is the name of the branch with the changes</li>
+     </ul>
+
+     <br>
+
+     <p>In addition, GitHub has a work flow that is important to creating and improving features. The process looks like this:</p>
+
+     <br>
+
+     <ol> 1. Create a feature branch which is a copy of the main branch used to add features to the web application while keeping track of changes. </ol>
+     <ol> 2. In the branch, commits are made which is similar to a snapshot of changes made in the code. While making commits, it is important to include commit message to document the changes made. </ol>
+     <ol> 3. The changes are then pushed to the feature branch in the GitHub repository, but not merged to the main branch. </ol>
+     <ol> 4. To merge, a pull request must be made allowing collaborators to view the changes.
+    </ol>
+     <ol> 5. Once the pull request is approved, the featured branch is merged into the main branch. </ol>
+
    
       </section>
+
+
+
+
+
+
+
+
+
    
       <section class="card" id="javascript-section">
    
       </section>
+
+    
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <h2>I can code!</h2>
     </footer>
     <script src="./assets/script.js"></script>
   </body>
